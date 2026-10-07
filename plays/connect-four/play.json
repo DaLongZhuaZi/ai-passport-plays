@@ -1,0 +1,1 @@
+{"author":"Shinku-Chen","description":"经典四子棋对弈：在棋盘上轮流落子，先把四枚棋子连成一线者胜。规则简单、上手即玩，是给工牌装的第一个小游戏的好选择。","id":"connect-four","license":"MIT","name":"四子棋 Connect Four","source":"https://github.com/Shinku-Chen/ai-passport","tags":["游戏","对弈","离线"],"version":"1.7.0"}

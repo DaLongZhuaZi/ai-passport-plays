@@ -1,0 +1,63 @@
+{
+  "name": "AI Passport 玩法库",
+  "device": "FoloToy AI Passport (ESP32-C3)",
+  "plays": [
+    {
+      "author": "Shinku-Chen",
+      "description": "经典四子棋对弈：在棋盘上轮流落子，先把四枚棋子连成一线者胜。规则简单、上手即玩，是给工牌装的第一个小游戏的好选择。",
+      "id": "connect-four",
+      "license": "MIT",
+      "name": "四子棋 Connect Four",
+      "source": "https://github.com/Shinku-Chen/ai-passport",
+      "tags": [
+        "游戏",
+        "对弈",
+        "离线"
+      ],
+      "version": "1.7.0",
+      "firmware": "plays/connect-four/firmware.bin",
+      "cover": "plays/connect-four/cover.jpg",
+      "address": 65536,
+      "size": 1097344,
+      "sha256": "6662272fe91de3733992af0b639e9fbae154e3d53aa483efb35f8baa064297d2"
+    },
+    {
+      "author": "XadillaX",
+      "description": "完全离线的六爻占卜：摇三枚铜钱、连掷六次成卦，完整收录六十四卦卦辞与三百八十四条爻辞，按朱熹《易学启蒙》的规则标注主读爻。待机时是古风时钟，白天日晷、夜间刻漏，带农历、干支与节气。不联网也能玩，适合随身带出门。",
+      "id": "cyberyao",
+      "license": "MIT",
+      "name": "赛博六爻 CyberYAO",
+      "source": "https://github.com/xadillax/cyberyao",
+      "tags": [
+        "离线",
+        "占卜",
+        "时钟"
+      ],
+      "version": "1.2.5",
+      "firmware": "plays/cyberyao/firmware.bin",
+      "cover": "plays/cyberyao/cover.jpg",
+      "address": 65536,
+      "size": 2333568,
+      "sha256": "ceaf2330e9277d47c47a986aa07fd3b5640cc0bfb5c58ed734cadf7b43798684"
+    },
+    {
+      "author": "Shinku-Chen",
+      "description": "把两台 AI Passport 变成一对蓝牙对讲机：通过 BLE 互联，按键说话、实时传声。露营、爬山、带孩子逛公园时不用掏手机喊人。需要两台设备各装一份。",
+      "id": "intercom",
+      "license": "MIT",
+      "name": "蓝牙对讲机 Intercom",
+      "source": "https://github.com/Shinku-Chen/ai-passport",
+      "tags": [
+        "蓝牙",
+        "对讲",
+        "双机"
+      ],
+      "version": "1.14",
+      "firmware": "plays/intercom/firmware.bin",
+      "cover": "plays/intercom/cover.jpg",
+      "address": 65536,
+      "size": 2301776,
+      "sha256": "2e462d9aa1c45a04fe679bc2afe5d214ebbeb22b9e84db513ca784edfc95278d"
+    }
+  ]
+}

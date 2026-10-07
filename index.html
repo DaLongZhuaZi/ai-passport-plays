@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Passport 玩法库 · 浏览器直装</title>
+<meta name="description" content="为 FoloToy AI Passport 收集的社区玩法，点开即可在浏览器里通过数据线直接安装到设备。">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎫</text></svg>">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <span class="brand-mark">🎫</span>
+      <div>
+        <h1>AI Passport 玩法库</h1>
+        <p class="tagline">社区玩法收集 · 浏览器直装 · 不绑任何服务</p>
+      </div>
+    </div>
+    <a class="gh-link" href="https://github.com/DaLongZhuaZi/ai-passport-plays" target="_blank" rel="noopener">GitHub 仓库 ↗</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="intro">
+    <p>这里收集了社区为 <strong>FoloToy AI Passport</strong>（ESP32-C3）做的有趣玩法。点任意玩法的「安装」，按提示用数据线连上设备，就能在浏览器里直接刷入——不需要装任何软件。</p>
+    <ul class="safety-notes">
+      <li>🔒 安装只写入设备的应用区（factory 分区），<strong>不触碰设备身份（cardid）与官方恢复区（Recovery）</strong>，随时可长按 UP 开机进 Recovery、用官方小程序装回官方玩法。</li>
+      <li>🖥️ 刷机需要桌面版 Chrome 或 Edge（Web Serial），手机浏览器不行。</li>
+      <li>⚠️ 安装会替换设备当前玩法；个别玩法原有的存档/设置可能会被重置。</li>
+    </ul>
+    <p id="env-warning" class="env-warning" hidden>⚠️ 当前浏览器不支持 Web Serial，无法在线安装。请使用桌面版 Chrome / Edge 打开本页。</p>
+  </section>
+
+  <section id="plays" class="plays-grid" aria-live="polite">
+    <p class="loading">正在读取玩法库…</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>本站为个人收集整理，与 FoloToy 官方无关。各玩法版权归原作者所有（MIT 许可），点卡片上的来源链接可查看原项目。</p>
+    <p>刷机有风险，请确保使用可传数据的数据线，并在刷机过程中不要拔线。</p>
+  </div>
+</footer>
+
+<!-- 安装弹窗 -->
+<div id="install-modal" class="modal" hidden>
+  <div class="modal-card">
+    <button class="modal-close" id="modal-close" aria-label="关闭">✕</button>
+    <h2 id="modal-title">安装玩法</h2>
+    <div class="steps">
+      <ol>
+        <li>先<strong>关机</strong>，然后<strong>按住设备上的 UP 键不松手</strong>，再插入数据线开机，直到电脑识别出串口（设备进入下载模式）。</li>
+        <li>点下方「连接设备」，在浏览器弹窗里选择对应的串口（名字里通常带 USB / JTAG 字样）。</li>
+        <li>连接成功后点「开始安装」，全程不要拔线，装完设备会自己重启。</li>
+      </ol>
+    </div>
+    <div class="modal-actions">
+      <button id="btn-connect" class="btn primary">连接设备</button>
+      <button id="btn-flash" class="btn primary" disabled>开始安装</button>
+      <button id="btn-done" class="btn" hidden>完成</button>
+    </div>
+    <div class="progress-row" id="progress-row" hidden>
+      <progress id="flash-progress" value="0" max="100"></progress>
+      <span id="progress-text">0%</span>
+    </div>
+    <pre id="flash-log" class="flash-log" aria-live="polite"></pre>
+  </div>
+</div>
+
+<script type="module" src="assets/app.js"></script>
+</body>
+</html>

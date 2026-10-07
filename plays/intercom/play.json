@@ -1,0 +1,1 @@
+{"author":"Shinku-Chen","description":"把两台 AI Passport 变成一对蓝牙对讲机：通过 BLE 互联，按键说话、实时传声。露营、爬山、带孩子逛公园时不用掏手机喊人。需要两台设备各装一份。","id":"intercom","license":"MIT","name":"蓝牙对讲机 Intercom","source":"https://github.com/Shinku-Chen/ai-passport","tags":["蓝牙","对讲","双机"],"version":"1.14"}
