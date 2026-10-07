@@ -27,7 +27,8 @@
     <p>这里收集了社区为 <strong>FoloToy AI Passport</strong>（ESP32-C3）做的有趣玩法。点任意玩法的「安装」，按提示用数据线连上设备，就能在浏览器里直接刷入——不需要装任何软件。</p>
     <ul class="safety-notes">
       <li>🔒 安装只写入设备的应用区（factory 分区），<strong>不触碰设备身份（cardid）与官方恢复区（Recovery）</strong>，随时可长按 UP 开机进 Recovery、用官方小程序装回官方玩法。</li>
-      <li>🖥️ 刷机需要桌面版 Chrome 或 Edge（Web Serial），手机浏览器不行。</li>
+      <li>🖥️ 在线安装需要桌面版 Chrome 或 Edge（Web Serial），安卓版 Chrome 没有这个接口。</li>
+      <li>📱 安卓手机可以点卡片上的「下载固件 .bin」，再用 OTG 数据线 + 安卓 ESP32 刷机 App，把固件写到地址 <strong>0x10000</strong> 完成安装。</li>
       <li>⚠️ 安装会替换设备当前玩法；个别玩法原有的存档/设置可能会被重置。</li>
     </ul>
     <p id="env-warning" class="env-warning" hidden>⚠️ 当前浏览器不支持 Web Serial，无法在线安装。请使用桌面版 Chrome / Edge 打开本页。</p>

@@ -77,6 +77,10 @@ body {
 .btn:disabled { opacity: 0.45; cursor: not-allowed; }
 .btn:not(:disabled):hover { filter: brightness(0.97); }
 .install-btn { margin-top: 6px; width: 100%; }
+.play-download { display: flex; align-items: center; justify-content: space-between; margin-top: 10px; }
+.dl-link { color: var(--accent); text-decoration: none; font-size: 14px; font-weight: 600; cursor: pointer; }
+.dl-link:hover { text-decoration: underline; }
+.dl-hint { color: var(--muted); font-size: 12px; }
 
 .site-footer { border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; padding: 18px 0 30px; }
 

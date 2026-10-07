@@ -127,9 +127,16 @@ function renderPlays(manifest) {
           <a href="${play.source}" target="_blank" rel="noopener">来源 ↗</a>
         </div>
         <button class="btn primary install-btn">安装到设备</button>
+        <div class="play-download">
+          <a class="dl-link">⬇ 下载固件 .bin</a>
+          <span class="dl-hint">手动刷机地址 0x10000</span>
+        </div>
       </div>`;
     card.querySelector(".play-name").textContent = play.name;
     card.querySelector(".play-desc").textContent = play.description;
+    const dl = card.querySelector(".dl-link");
+    dl.href = resolveUrl(play.firmware);
+    dl.setAttribute("download", `${play.id}-v${play.version}.bin`);
     const btn = card.querySelector(".install-btn");
     if (!serialSupported) {
       btn.disabled = true;
