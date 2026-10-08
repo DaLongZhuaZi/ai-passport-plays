@@ -58,6 +58,25 @@
       "address": 65536,
       "size": 2301776,
       "sha256": "2e462d9aa1c45a04fe679bc2afe5d214ebbeb22b9e84db513ca784edfc95278d"
+    },
+    {
+      "author": "DaLongZhuaZi",
+      "description": "把工牌变成安卓手机的蓝牙媒体遥控器：配对一次，上键上一曲、下键下一曲、OK 播放/暂停，长按上下调音量、长按 OK 静音、双击 OK 回桌面。标准 BLE HID，手机不用装 App；工牌电量会同步显示在手机上。",
+      "id": "media-remote",
+      "license": "MIT",
+      "name": "媒体遥控器 Media Remote",
+      "source": "https://github.com/DaLongZhuaZi/ai-passport-media-remote",
+      "tags": [
+        "蓝牙",
+        "遥控器",
+        "媒体"
+      ],
+      "version": "1.0.0",
+      "firmware": "plays/media-remote/firmware.bin",
+      "cover": "plays/media-remote/cover.jpg",
+      "address": 65536,
+      "size": 1072608,
+      "sha256": "57950ffc2d7971c5d8be44a968bbc4b4787a1bc2f52633752eff1314161014d6"
     }
   ]
 }

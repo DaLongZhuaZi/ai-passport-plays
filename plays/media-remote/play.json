@@ -1,0 +1,1 @@
+{"author":"DaLongZhuaZi","description":"把工牌变成安卓手机的蓝牙媒体遥控器：配对一次，上键上一曲、下键下一曲、OK 播放/暂停，长按上下调音量、长按 OK 静音、双击 OK 回桌面。标准 BLE HID，手机不用装 App；工牌电量会同步显示在手机上。","id":"media-remote","license":"MIT","name":"媒体遥控器 Media Remote","source":"https://github.com/DaLongZhuaZi/ai-passport-media-remote","tags":["蓝牙","遥控器","媒体"],"version":"1.0.0"}
