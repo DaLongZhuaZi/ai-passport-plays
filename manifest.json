@@ -75,8 +75,8 @@
       "firmware": "plays/media-remote/firmware.bin",
       "cover": "plays/media-remote/cover.jpg",
       "address": 65536,
-      "size": 1072608,
-      "sha256": "57950ffc2d7971c5d8be44a968bbc4b4787a1bc2f52633752eff1314161014d6"
+      "size": 1072640,
+      "sha256": "adaf41f62f03cbfc71e82081beb6880e024bdfd62d98b66d8524a795ef8e1e15"
     }
   ]
 }
